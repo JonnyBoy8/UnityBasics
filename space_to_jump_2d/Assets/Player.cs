@@ -21,10 +21,12 @@ public class Player : MonoBehaviour
             rb2d.velocity = Vector2.up * jumpPower;
         }
 
+    //additional W jump key added
         if(Input.GetKeyDown(KeyCode.W) && IsGrounded()) {
             rb2d.velocity = Vector2.up * jumpPower;
         }
 
+    //ASD keys added
         Vector3 pos = transform.position;
 
         if(Input.GetKey(KeyCode.S))

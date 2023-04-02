@@ -41,6 +41,7 @@ public class MovementScript : MonoBehaviour
             pos.x += speed * Time.deltaTime;
         }
 
+//Arrows added to also do movement
         if(Input.GetKey(KeyCode.UpArrow))
         {
             pos.y += speed * Time.deltaTime;

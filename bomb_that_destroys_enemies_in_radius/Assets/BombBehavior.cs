@@ -24,6 +24,7 @@ public class BombBehavior : MonoBehaviour
 
     void MoveObject()
     {
+    //Move Bomb with WASD
         Vector3 pos = transform.position;
 
         if(Input.GetKey(KeyCode.W))
@@ -46,6 +47,7 @@ public class BombBehavior : MonoBehaviour
             pos.x += speed * Time.deltaTime;
         }
 
+    //Denoate Bomb with E
         if(Input.GetKey(KeyCode.E))
         {
             DetonateBomb();

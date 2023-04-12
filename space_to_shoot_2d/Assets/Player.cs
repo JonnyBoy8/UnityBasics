@@ -21,11 +21,13 @@ public class Player : MonoBehaviour {
       if(Input.GetKey(KeyCode.UpArrow))
       {
           cooldown = cooldown - 0.1f;
+          Debug.Log(cooldown);
       }
 
       if(Input.GetKey(KeyCode.DownArrow))
       {
           cooldown = cooldown + 0.1f;
+          Debug.Log(cooldown);
       }
 
       UpdateMotion();
